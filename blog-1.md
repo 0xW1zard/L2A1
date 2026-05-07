@@ -38,6 +38,6 @@ interface UserPreview {
 --> type SafeUser = Omit<User, "password">;
 ```
 
-**Conclusion**
+## Conclusion
 
 Pick and Omit help us create smaller versions of interfaces without rewriting code. They keep our TypeScript code clean, safe, and easy to manage.

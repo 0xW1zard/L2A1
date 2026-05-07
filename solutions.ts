@@ -1,10 +1,16 @@
-function filterEvenNumbers (numbers: number[]): number[] {
-    return numbers.filter(n => n % 2 === 0);
+//Problem 1
+
+function filterEvenNumbers(numbers: number[]): number[] {
+  return numbers.filter((n) => n % 2 === 0);
 }
 
+//Problem 2
+
 function reverseString(srt: string): string {
-    return srt.split('').reverse().join('');
+  return srt.split("").reverse().join("");
 }
+
+//Problem 3
 
 type StringOrNumber = string | number;
 function checkType(value: StringOrNumber): string | number {
@@ -15,24 +21,28 @@ function checkType(value: StringOrNumber): string | number {
   }
 }
 
+//Problem 4
+
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
 }
 
-interface Book{
-    title: string;
-    author: string;
-    publishedYear: number;
+//Problem 5
+
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
 }
 
-function toggleReadStatus(Book:Book) {
-    return {
-        ...Book,
-        isRead: true
-    };
+function toggleReadStatus(Book: Book) {
+  return {
+    ...Book,
+    isRead: true,
+  };
 }
 
-
+//Problem 6
 
 class Person {
   name: string;
@@ -57,8 +67,9 @@ class Student extends Person {
   }
 }
 
+//Problem 7
 
 function getIntersection(arr1: number[], arr2: number[]): number[] {
-    const set = new Set(arr2);
-    return arr1.filter(num => set.has(num));
+  const set = new Set(arr2);
+  return arr1.filter((num) => set.has(num));
 }
