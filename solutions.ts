@@ -1,16 +1,10 @@
-//Problem 1
-
 function filterEvenNumbers(numbers: number[]): number[] {
   return numbers.filter((n) => n % 2 === 0);
 }
 
-//Problem 2
-
 function reverseString(srt: string): string {
   return srt.split("").reverse().join("");
 }
-
-//Problem 3
 
 type StringOrNumber = string | number;
 function checkType(value: StringOrNumber): string | number {
@@ -21,13 +15,9 @@ function checkType(value: StringOrNumber): string | number {
   }
 }
 
-//Problem 4
-
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
 }
-
-//Problem 5
 
 interface Book {
   title: string;
@@ -41,8 +31,6 @@ function toggleReadStatus(Book: Book) {
     isRead: true,
   };
 }
-
-//Problem 6
 
 class Person {
   name: string;
@@ -66,8 +54,6 @@ class Student extends Person {
     return `Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`;
   }
 }
-
-//Problem 7
 
 function getIntersection(arr1: number[], arr2: number[]): number[] {
   const set = new Set(arr2);
